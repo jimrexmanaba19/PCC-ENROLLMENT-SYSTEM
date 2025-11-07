@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasig Catholic College</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="pcclogo.jpg" alt="PCC Logo">
+      <div class="logo-text">
+        Pasig<br>Catholic<br>College
+      </div>
+    </div>
+    <nav>
+      <a href="#" onclick="showSection('homepage')">Home</a>
+      <a href="#" onclick="showSection('admission')">Admission</a>
+      <a href="#" onclick="showSection('userkind')">Portal</a>
+    </nav>
+    <div class="right-nav">
+      <a href="#" onclick="showSection('login')" class="login">Login</a>
+      <a href="#" onclick="showSection('registration')" class="enroll">Enroll Now</a>
+    </div>
+  </header>
+
+  <!-- Homepage Section -->
+  <section id="homepage" class="section hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>SCHOOL</h1>
+      <h1>ADMISSION</h1>
+      <p><b>OPEN NOW</b> FOR REGISTRATION<br>For S.Y <span>2025-2026</span></p>
+    </div>
+  </section>
+
+  <!-- Admission Section -->
+  <section id="admission" class="section requirements" style="display: none;">
+    <h2>Admissions & Enrollment</h2>
+    <p>Take the first step towards your future. Join our community of learners and achieve your academic goals.</p>
+    <a href="#" onclick="showSection('registration')">Start Application →</a>
+    <h2>Admission Requirements</h2>
+    <div class="req-box">
+      <p>Please ensure you meet all requirements before submitting your application.</p>
+      <div class="req-list">
+        <div class="req-item">Report card and Good Moral Certificate (New Student)</div>
+        <div class="req-item">Baptismal & Confirmation Certificate (Catholic Student)</div>
+        <div class="req-item">Transcript of Records (TOR) and Honorable Dismissal (Transferee)</div>
+        <div class="req-item">Marriage Certificate (Married Student)</div>
+        <div class="req-item">PSA Birth Certificate</div>
+        <div class="req-item">Long White Folder (2pcs)</div>
+        <div class="req-item">2x2 pictures with red background</div>
+        <div class="req-item">Long Brown Envelope (2pcs)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Login Section -->
+  <section id="login" class="section login-section" style="display: none;">
+    <div class="logincontainer">
+      <div class="left-panel">
+        <img src="pcclogo.jpg" alt="PCC Logo">
+        <h1>Pasig Catholic College</h1>
+        <p>College Department</p>
+      </div>
+      <div class="right-panel">
+        <img src="pcclogo.jpg" alt="PCC Logo">
+        <h2>Welcome!</h2>
+        <form id="loginForm">
+          <input type="text" id="username" placeholder="Username" required>
+          <input type="password" id="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+        <a href="#">Forgot Password?</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Section -->
+  <section id="registration" class="section hero" style="display: none;">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>SCHOOL</h1>
+      <h1>ADMISSION</h1>
+      <p><b>OPEN NOW</b> FOR REGISTRATION<br>For S.Y <span>2025-2026</span></p>
+    </div>
+  </section>
+
+  <!-- User Kind Section -->
+  <section id="userkind" class="section userkind-section" style="display: none;">
+    <div class="container">
+      <a href="#" onclick="showSection('login')" class="panel admin">
+        <h2>Admin</h2>
+        <img src="admin.png" alt="Admin Icon">
+      </a>
+      <a href="#" onclick="showSection('login')" class="panel student">
+        <h2>Student</h2>
+        <img src="student.png" alt="Student Icon">
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Pasig Catholic College. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
