@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pasig Catholic College</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+        }
+        /* Header Styles */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 50px;
+            border-bottom: 2px solid black;
+        }
+        .logo-section {
+            display: flex;
+            align-items: center;
+        }
+        .logo-section img {
+            height: 60px;
+            margin-right: 15px;
+        }
+        .logo-text {
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+            line-height: 1.2;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            font-size: 14px;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: normal;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #d93333; /* A red highlight on hover */
+        }
+        nav .login {
+            font-weight: 700;
+            cursor: pointer;
+        }
+        nav .enroll-btn {
+            background-color: #b22222; /* A strong red color */
+            color: white;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        nav .enroll-btn:hover {
+            background-color: #800000; /* Darker red on hover */
+        }
+
+        /* Divider line after header */
+        .divider {
+            border-top: 1px solid black;
+            margin: 2 20px;
+        }
+
+        /* Main Content Section */
+        main {
+            max-width: 600px;
+            margin: 40px auto;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.4;
+            color: black;
+        }
+        main h3 {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        main p {
+            font-weight: 400;
+            margin: 0 0 25px 0;
+            font-size: 20px;
+        }
+        main p.contact-number {
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        main p.contact-number span {
+            font-weight: 400;
+            font-size: 16px;
+            display: block;
+            margin-top: 5px;
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .social-icons svg,
+        .social-icons img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            fill: black;
+            transition: fill 0.3s ease;
+        }
+        .social-icons svg:hover {
+            fill: #d93333;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(to bottom, #f25f5c, #f7a399);
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            border-top: 2px solid black;
+            margin-top:  110px;
+        }
+        footer p {
+            margin: 10px 0;
+            font-weight: 400;
+        }
+        footer p.title {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            nav {
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+            main {
+                margin: 50px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <img src="pcclogo.png" alt="Pasig Catholic College Logo" />
+            <div class="logo-text">
+                Pasig <br />
+                Catholic <br />
+                College
+            </div>
+        </div>
+        <nav>
+            <a href="Homepage.html">Home</a>
+            <a href="#">Programs</a>
+            <a href="Admission.html">Admission</a>
+            <a href="#">FAQ</a>
+            <a href="login.html" class="login">Login</a>
+            <a href="Application.html" class="enroll-btn">Enroll Now</a>
+        </nav>
+    </header>
+
+    <div class="divider"></div>
+
+    <main>
+        <h3>Malinao Campus</h3>
+        <p>justice ramon Jabson St. Malinao, Pasig City</p>
+
+        <h3>Caniogan Campus</h3>
+        <p>Centennial Building C. Raymundo Ave . Caniogan Pasig CIty</p>
+
+        <p class="contact-number">Contact Number<br /><span>(02) 8642 - 7451</span></p>
+
+        <div class="social-icons" aria-label="Social Media Links">
+            <!-- Facebook Icon -->
+            <svg role="img" aria-label="Facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M22.675 0h-21.35C.592 0 0 .593 0 1.326v21.348C0 23.407.592 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24h-1.918c-1.504 0-1.796.715-1.796 1.764v2.313h3.59l-.467 3.622h-3.123V24h6.116c.73 0 1.324-.593 1.324-1.326V1.326C24 .593 23.405 0 22.675 0z"/>
+            </svg>
+            <!-- YouTube Icon -->
+            <svg role="img" aria-label="YouTube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M23.498 6.186a2.964 2.964 0 0 0-2.086-2.098C19.682 3.48 12 3.48 12 3.48s-7.682 0-9.412.608a2.967 2.967 0 0 0-2.086 2.098A30.067 30.067 0 0 0 0 11.998a30.157 30.157 0 0 0 .502 5.804 2.964 2.964 0 0 0 2.086 2.107c1.7.605 9.412.605 9.412.605s7.682 0 9.412-.605a2.967 2.967 0 0 0 2.086-2.107 30.157 30.157 0 0 0 .502-5.805 30.157 30.157 0 0 0-.502-5.812zM9.546 15.568V8.451l6.18 3.554-6.18 3.563z"/>
+            </svg>
+            <!-- Twitter Icon -->
+            <svg role="img" aria-label="Twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M24 4.557a9.83 9.83 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724c-.958.568-2.016.978-3.149 1.2a4.918 4.918 0 0 0-8.381 4.482A13.955 13.955 0 0 1 1.671 3.149a4.915 4.915 0 0 0 1.523 6.573 4.903 4.903 0 0 1-2.228-.616c-.054 2.28 1.581 4.415 3.949 4.89a4.936 4.936 0 0 1-2.224.085 4.92 4.92 0 0 0 4.59 3.416A9.868 9.868 0 0 1 0 19.54a13.94 13.94 0 0 0 7.548 2.209c9.057 0 14.01-7.512 14.01-14.01 0-.213-.005-.426-.014-.637A9.936 9.936 0 0 0 24 4.557z"/>
+            </svg>
+        </div>
+    </main>
+
+    <footer>
+        <p class="title">News</p>
+        <p>2025 OrangeApps Inc.All Rights Reserved.</p>
+        <p>Crafted with by orangeApps Team.</p>
+    </footer>
+</body>
+</html>

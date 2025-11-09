@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PCC College Department Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-[Poppins] bg-gray-100">
+
+  <div class="min-h-screen flex">
+
+    <!-- 🔴 LEFT PANEL -->
+    <div class="hidden md:flex w-1/2 bg-gradient-to-b from-[#C8102E] to-red-600 flex-col justify-center items-center text-white text-center p-10">
+      <img src="pcclogo.png" alt="PCC Logo" class="w-100 mb-6">
+      <h1 class="text-3xl font-bold">Pasig Catholic College</h1>
+      <p class="mt-4 text-xl font-semibold">College Department</p>
+    </div>
+
+    <!-- ⚪ RIGHT PANEL -->
+    <div class="flex w-full md:w-1/2 justify-center items-center bg-white">
+      <div class="w-full max-w-sm p-8">
+        <div class="flex justify-center mb-6">
+          <img src="pcclogo.png" alt="PCC Logo" class="w-24">
+        </div>
+        <h2 class="text-2xl font-semibold text-center mb-6">Welcome!</h2>
+        <form class="space-y-4">
+          <div>
+            <input type="text" placeholder="Username" class="w-full border border-gray-300 rounded-md px-4 py-3 bg-[#FCEEEF] focus:outline-none focus:ring-2 focus:ring-[#C8102E]">
+          </div>
+          <div>
+            <input type="password" placeholder="Password" class="w-full border border-gray-300 rounded-md px-4 py-3 bg-[#FCEEEF] focus:outline-none focus:ring-2 focus:ring-[#C8102E]">
+          </div>
+          <button type="submit" class="w-full bg-[#C8102E] text-white py-3 rounded-md font-semibold hover:bg-red-700 transition">Login</button>
+        </form>
+        <div class="text-center mt-4">
+          <a href="forgot password.html" class="text-sm text-[#C8102E] hover:underline">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

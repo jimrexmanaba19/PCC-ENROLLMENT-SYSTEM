@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admissions & Enrollment | Pasig Catholic College</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 50px;
+      
+    }
+
+    .logo-text {
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #c00;
+    }
+
+    .right-nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .login {
+      color: black;
+    }
+
+    .enroll {
+       background-color: #b60000;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 5px;
+    }
+
+    .enroll-btn:hover {
+      background-color: #990000;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to bottom, #ff6b6b, #f9b4b4);
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .hero a {
+      display: inline-block;
+      background-color: white;
+      color: #b30000;
+      padding: 14px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .hero a:hover {
+      background-color: #ffeaea;
+    }
+
+    /* REQUIREMENTS SECTION */
+    .requirements {
+      background-color: #f2f2f2;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .requirements h2 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .req-box {
+      max-width: 850px;
+      margin: 0 auto;
+      background-color: white;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      padding: 20px 30px;
+      text-align: left;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .req-box p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 16px;
+    }
+
+    .req-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 10px 30px;
+    }
+
+    .req-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 15px;
+    }
+
+    .req-item::before {
+      content: "✔️";
+      color: #c00;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #888;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="pcclogo.png" alt="PCC Logo">
+      <span class="logo-text">
+        Pasig<br>Catholic<br>College
+    </div>
+
+    <nav>
+      <a href="Homepage.html">Home</a>
+      <a href="#">Programs</a>
+      <a href="Admission.html">Admission</a>
+      <a href="FAQ.html">FAQ</a>
+    </nav>
+
+    <div class="right-nav">
+      <a href="login.html" class="login">Login</a>
+      <a href="#" class="enroll">Enroll Now</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Admissions & Enrollment</h1>
+    <p>Take the first step towards your future. Join our community of learners and achieve your academic goals.</p>
+    <a href="Application.html">Start Application →</a>
+  </section>
+
+  <section class="requirements">
+    <h2>Admission Requirements</h2>
+    <div class="req-box">
+      <p>Please ensure you meet all requirements before submitting your application.</p>
+      <div class="req-list">
+        <div class="req-item">Report card and Good Moral Certificate (New Student)</div>
+        <div class="req-item">Baptismal & Confirmation Certificate (Catholic Student)</div>
+        <div class="req-item">Transcript of Records (TOR) and Honorable Dismissal (Transferee)</div>
+        <div class="req-item">Marriage Certificate (Married Student)</div>
+        <div class="req-item">PSA Birth Certificate</div>
+        <div class="req-item">Long White Folder (2pcs)</div>
+        <div class="req-item">2x2 pictures with red background</div>
+        <div class="req-item">Long Brown Envelope (2pcs)</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Pasig Catholic College. All rights reserved.
+  </footer>
+  
+
+</body>
+</html>

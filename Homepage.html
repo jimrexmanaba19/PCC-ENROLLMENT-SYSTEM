@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasig Catholic College</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Navbar */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    .logo-text {
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #b60000;
+    }
+
+    .right-nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .login {
+      color: black;
+    }
+
+    .enroll {
+      background-color: #b60000;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 5px;
+    }
+
+    .enroll:hover {
+      background-color: #990000;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      background-image: url('PCCBG.jpg'); /* Replace with your background image */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: left;
+      padding: 180px 80px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(200, 0, 0, 0.7);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+    }
+
+    .hero-content h1 {
+      font-size: 4rem;
+      font-weight: 900;
+      margin: 0;
+    }
+
+    .hero-content h2 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-top: -20px;
+    }
+
+    .hero-content p {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .hero-content span {
+      color: white;
+      font-weight: 900;
+    }
+
+    .highlight {
+      color: #ffb3b3;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero {
+        padding: 120px 40px;
+      }
+      .hero-content h1, .hero-content h2 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="pcclogo.png" alt="PCC Logo">
+      <div class="logo-text">
+        Pasig<br>Catholic<br>College
+      </div>
+    </div>
+
+    <nav>
+      <a href="Homepage.html">Home</a>
+      <a href="#">Programs</a>
+      <a href="Admission.html">Admission</a>
+      <a href="FAQ.html">FAQ</a>
+    </nav>
+
+    <div class="right-nav">
+      <a href="userkind.html" class="login">Login</a>
+      <a href="Registration.html" class="enroll">Enroll Now</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>SCHOOL</h1>
+      <h1>ADMISSION</h1>
+      <p><b>OPEN NOW</b> FOR REGISTRATION<br>For S.Y <span>2025-2026</span></p>
+    </div>
+  </section>
+
+</body>
+</html>
